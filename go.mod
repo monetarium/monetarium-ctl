@@ -16,6 +16,7 @@ require (
 	github.com/dchest/siphash v1.2.3 // indirect
 	github.com/decred/base58 v1.0.5 // indirect
 	github.com/decred/dcrd/chaincfg/chainhash v1.0.4 // indirect
+	github.com/decred/dcrd/cointype v1.0.0 // indirect
 	github.com/decred/dcrd/crypto/blake256 v1.1.0 // indirect
 	github.com/decred/dcrd/crypto/ripemd160 v1.0.2 // indirect
 	github.com/decred/dcrd/dcrec v1.0.1 // indirect
@@ -27,4 +28,16 @@ require (
 	github.com/klauspost/cpuid/v2 v2.2.8 // indirect
 	golang.org/x/sys v0.30.0 // indirect
 	lukechampine.com/blake3 v1.3.0 // indirect
+)
+
+replace decred.org/dcrwallet/v5 => ../dcrwallet
+
+// Replace with local Monetarium dcrd modules for dual-coin support
+replace (
+	github.com/decred/dcrd/chaincfg/chainhash => ../dcrd/chaincfg/chainhash
+	github.com/decred/dcrd/cointype => ../dcrd/cointype
+	github.com/decred/dcrd/dcrjson/v4 => ../dcrd/dcrjson
+	github.com/decred/dcrd/dcrutil/v4 => ../dcrd/dcrutil
+	github.com/decred/dcrd/rpc/jsonrpc/types/v4 => ../dcrd/rpc/jsonrpc/types
+	github.com/decred/dcrd/wire => ../dcrd/wire
 )
