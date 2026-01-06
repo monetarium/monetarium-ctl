@@ -5,8 +5,8 @@ monetarium-ctl
 [![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 
 Monetarium-ctl is a command-line client for interacting with the JSON-RPC servers of
-[monetarium](https://github.com/monetarium/node) and
-[monetarium-wallet](https://github.com/monetarium/wallet).
+[monetarium](https://github.com/monetarium/monetarium-node) and
+[monetarium-wallet](https://github.com/monetarium/monetarium-wallet).
 
 ## Usage
 
@@ -45,7 +45,7 @@ changes may be written to a config file in a platform-specific location:
   this repository:
 
   ```sh
-  $ go install github.com/monetarium/ctl@latest
+  $ go install github.com/monetarium/monetarium-ctl@latest
   ```
 
   Alternatively, a development build can be performed by running `go install` in

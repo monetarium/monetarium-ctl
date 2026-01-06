@@ -16,7 +16,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/monetarium/node/dcrjson"
+	"github.com/monetarium/monetarium-node/dcrjson"
 	"github.com/decred/go-socks/socks"
 )
 
