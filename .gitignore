@@ -24,7 +24,11 @@ go.work.sum
 # Binaries
 *.exe
 dcrctl
+ctl
 
 # Vim
 *.sw*
 Session.vim
+
+# Internal
+STRUCTURE.md
