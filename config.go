@@ -40,16 +40,16 @@ const (
 )
 
 var (
-	dcrdHomeDir            = dcrutil.AppDataDir("dcrd", false)
-	dcrctlHomeDir          = dcrutil.AppDataDir("dcrctl", false)
-	dcrwalletHomeDir       = dcrutil.AppDataDir("dcrwallet", false)
-	defaultConfigFile      = filepath.Join(dcrctlHomeDir, "dcrctl.conf")
-	defaultClientCertFile  = filepath.Join(dcrctlHomeDir, "client.pem")
-	defaultClientKeyFile   = filepath.Join(dcrctlHomeDir, "client-key.pem")
+	monetariumHomeDir      = dcrutil.AppDataDir("monetarium", false)
+	monetariumCtlHomeDir   = dcrutil.AppDataDir("monetarium-ctl", false)
+	monetariumWalletHomeDir = dcrutil.AppDataDir("monetarium-wallet", false)
+	defaultConfigFile      = filepath.Join(monetariumCtlHomeDir, "monetarium-ctl.conf")
+	defaultClientCertFile  = filepath.Join(monetariumCtlHomeDir, "client.pem")
+	defaultClientKeyFile   = filepath.Join(monetariumCtlHomeDir, "client-key.pem")
 	defaultRPCServer       = "localhost"
 	defaultWalletRPCServer = "localhost"
-	defaultRPCCertFile     = filepath.Join(dcrdHomeDir, "rpc.cert")
-	defaultWalletCertFile  = filepath.Join(dcrwalletHomeDir, "rpc.cert")
+	defaultRPCCertFile     = filepath.Join(monetariumHomeDir, "rpc.cert")
+	defaultWalletCertFile  = filepath.Join(monetariumWalletHomeDir, "rpc.cert")
 )
 
 // listCommands categorizes and lists all of the usable commands along with
@@ -111,7 +111,7 @@ func listCommands() {
 	}
 }
 
-// config defines the configuration options for dcrctl.
+// config defines the configuration options for monetarium-ctl.
 //
 // See loadConfig for details on the configuration load process.
 type config struct {
@@ -392,23 +392,23 @@ func loadConfig() (*config, []string, error) {
 }
 
 // createDefaultConfig creates a basic config file at the given destination path.
-// For this it tries to read the dcrd config file at its default path, and extract
+// For this it tries to read the monetarium config file at its default path, and extract
 // the RPC user and password from it.
 func createDefaultConfigFile(destinationPath string) error {
-	// Nothing to do when there is no existing dcrd conf file at the default
+	// Nothing to do when there is no existing monetarium conf file at the default
 	// path to extract the details from.
-	dcrdConfigPath := filepath.Join(dcrdHomeDir, "dcrd.conf")
-	if !fileExists(dcrdConfigPath) {
+	monetariumConfigPath := filepath.Join(monetariumHomeDir, "monetarium.conf")
+	if !fileExists(monetariumConfigPath) {
 		return nil
 	}
 
-	// Read dcrd.conf from its default path
-	dcrdConfigFile, err := os.Open(dcrdConfigPath)
+	// Read monetarium.conf from its default path
+	monetariumConfigFile, err := os.Open(monetariumConfigPath)
 	if err != nil {
 		return err
 	}
-	defer dcrdConfigFile.Close()
-	content, err := io.ReadAll(dcrdConfigFile)
+	defer monetariumConfigFile.Close()
+	content, err := io.ReadAll(monetariumConfigFile)
 	if err != nil {
 		return err
 	}
