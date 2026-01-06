@@ -17,11 +17,11 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/decred/dcrd/dcrjson/v4"
-	"github.com/decred/dcrd/dcrutil/v4"
+	"github.com/monetarium/node/dcrjson"
+	"github.com/monetarium/node/dcrutil"
 
-	wallettypes "decred.org/dcrwallet/v5/rpc/jsonrpc/types"
-	dcrdtypes "github.com/decred/dcrd/rpc/jsonrpc/types/v4"
+	wallettypes "github.com/monetarium/wallet/rpc/jsonrpc/types"
+	dcrdtypes "github.com/monetarium/node/rpc/jsonrpc/types"
 
 	flags "github.com/jessevdk/go-flags"
 )

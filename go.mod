@@ -1,43 +1,34 @@
-module decred.org/dcrctl
+module github.com/monetarium/ctl
 
 go 1.23
 
 require (
-	decred.org/dcrwallet/v5 v5.0.0-20250220181615-192873f68c18
-	github.com/decred/dcrd/dcrjson/v4 v4.1.0
-	github.com/decred/dcrd/dcrutil/v4 v4.0.2
-	github.com/decred/dcrd/rpc/jsonrpc/types/v4 v4.3.0
 	github.com/decred/go-socks v1.1.0
 	github.com/jessevdk/go-flags v1.6.1
+	github.com/monetarium/node/dcrjson v1.0.3
+	github.com/monetarium/node/dcrutil v1.0.3
+	github.com/monetarium/node/rpc/jsonrpc/types v1.0.3
+	github.com/monetarium/wallet v1.0.3
 )
 
 require (
 	github.com/agl/ed25519 v0.0.0-20170116200512-5312a6153412 // indirect
 	github.com/dchest/siphash v1.2.3 // indirect
 	github.com/decred/base58 v1.0.5 // indirect
-	github.com/decred/dcrd/chaincfg/chainhash v1.0.4 // indirect
-	github.com/decred/dcrd/cointype v1.0.0 // indirect
-	github.com/decred/dcrd/crypto/blake256 v1.1.0 // indirect
-	github.com/decred/dcrd/crypto/ripemd160 v1.0.2 // indirect
-	github.com/decred/dcrd/dcrec v1.0.1 // indirect
-	github.com/decred/dcrd/dcrec/edwards/v2 v2.0.3 // indirect
-	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.4.0 // indirect
-	github.com/decred/dcrd/txscript/v4 v4.1.1 // indirect
-	github.com/decred/dcrd/wire v1.7.0 // indirect
+	github.com/decred/dcrd/crypto/blake256 v1.0.1 // indirect
 	github.com/decred/slog v1.2.0 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.8 // indirect
+	github.com/monetarium/node/chaincfg/chainhash v1.0.3 // indirect
+	github.com/monetarium/node/cointype v1.0.3 // indirect
+	github.com/monetarium/node/crypto/blake256 v1.0.3 // indirect
+	github.com/monetarium/node/crypto/rand v1.0.3 // indirect
+	github.com/monetarium/node/crypto/ripemd160 v1.0.3 // indirect
+	github.com/monetarium/node/dcrec v1.0.3 // indirect
+	github.com/monetarium/node/dcrec/edwards v1.0.3 // indirect
+	github.com/monetarium/node/dcrec/secp256k1 v1.0.3 // indirect
+	github.com/monetarium/node/txscript v1.0.3 // indirect
+	github.com/monetarium/node/wire v1.0.3 // indirect
+	golang.org/x/crypto v0.33.0 // indirect
 	golang.org/x/sys v0.30.0 // indirect
 	lukechampine.com/blake3 v1.3.0 // indirect
-)
-
-replace decred.org/dcrwallet/v5 => ../dcrwallet
-
-// Replace with local Monetarium dcrd modules for dual-coin support
-replace (
-	github.com/decred/dcrd/chaincfg/chainhash => ../dcrd/chaincfg/chainhash
-	github.com/decred/dcrd/cointype => ../dcrd/cointype
-	github.com/decred/dcrd/dcrjson/v4 => ../dcrd/dcrjson
-	github.com/decred/dcrd/dcrutil/v4 => ../dcrd/dcrutil
-	github.com/decred/dcrd/rpc/jsonrpc/types/v4 => ../dcrd/rpc/jsonrpc/types
-	github.com/decred/dcrd/wire => ../dcrd/wire
 )
