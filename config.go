@@ -17,13 +17,11 @@ import (
 	"runtime"
 	"strings"
 
+	flags "github.com/jessevdk/go-flags"
 	"github.com/monetarium/monetarium-node/dcrjson"
 	"github.com/monetarium/monetarium-node/dcrutil"
-
-	wallettypes "github.com/monetarium/monetarium-wallet/rpc/jsonrpc/types"
 	dcrdtypes "github.com/monetarium/monetarium-node/rpc/jsonrpc/types"
-
-	flags "github.com/jessevdk/go-flags"
+	wallettypes "github.com/monetarium/monetarium-wallet/rpc/jsonrpc/types"
 )
 
 const (
@@ -40,16 +38,16 @@ const (
 )
 
 var (
-	monetariumHomeDir      = dcrutil.AppDataDir("monetarium", false)
-	monetariumCtlHomeDir   = dcrutil.AppDataDir("monetarium-ctl", false)
+	monetariumHomeDir       = dcrutil.AppDataDir("monetarium", false)
+	monetariumCtlHomeDir    = dcrutil.AppDataDir("monetarium-ctl", false)
 	monetariumWalletHomeDir = dcrutil.AppDataDir("monetarium-wallet", false)
-	defaultConfigFile      = filepath.Join(monetariumCtlHomeDir, "monetarium-ctl.conf")
-	defaultClientCertFile  = filepath.Join(monetariumCtlHomeDir, "client.pem")
-	defaultClientKeyFile   = filepath.Join(monetariumCtlHomeDir, "client-key.pem")
-	defaultRPCServer       = "localhost"
-	defaultWalletRPCServer = "localhost"
-	defaultRPCCertFile     = filepath.Join(monetariumHomeDir, "rpc.cert")
-	defaultWalletCertFile  = filepath.Join(monetariumWalletHomeDir, "rpc.cert")
+	defaultConfigFile       = filepath.Join(monetariumCtlHomeDir, "monetarium-ctl.conf")
+	defaultClientCertFile   = filepath.Join(monetariumCtlHomeDir, "client.pem")
+	defaultClientKeyFile    = filepath.Join(monetariumCtlHomeDir, "client-key.pem")
+	defaultRPCServer        = "localhost"
+	defaultWalletRPCServer  = "localhost"
+	defaultRPCCertFile      = filepath.Join(monetariumHomeDir, "rpc.cert")
+	defaultWalletCertFile   = filepath.Join(monetariumWalletHomeDir, "rpc.cert")
 )
 
 // listCommands categorizes and lists all of the usable commands along with

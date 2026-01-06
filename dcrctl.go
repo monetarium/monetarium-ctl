@@ -16,9 +16,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	wallettypes "github.com/monetarium/monetarium-wallet/rpc/jsonrpc/types"
 	"github.com/monetarium/monetarium-node/dcrjson"
 	dcrdtypes "github.com/monetarium/monetarium-node/rpc/jsonrpc/types"
+	wallettypes "github.com/monetarium/monetarium-wallet/rpc/jsonrpc/types"
 )
 
 const (

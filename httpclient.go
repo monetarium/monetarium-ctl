@@ -16,8 +16,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/monetarium/monetarium-node/dcrjson"
 	"github.com/decred/go-socks/socks"
+	"github.com/monetarium/monetarium-node/dcrjson"
 )
 
 // newHTTPClient returns a new HTTP client that is configured according to the
