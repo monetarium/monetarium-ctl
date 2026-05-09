@@ -20,7 +20,7 @@ import (
 	flags "github.com/jessevdk/go-flags"
 	"github.com/monetarium/monetarium-node/dcrjson"
 	"github.com/monetarium/monetarium-node/dcrutil"
-	dcrdtypes "github.com/monetarium/monetarium-node/rpc/jsonrpc/types"
+	mondtypes "github.com/monetarium/monetarium-node/rpc/jsonrpc/types"
 	wallettypes "github.com/monetarium/monetarium-wallet/rpc/jsonrpc/types"
 )
 
@@ -59,7 +59,7 @@ func listCommands() {
 		Usages []string
 	}{{
 		Header: "Chain Server Commands:",
-		Method: dcrdtypes.Method(""),
+		Method: mondtypes.Method(""),
 	}, {
 		Header: "Wallet Server Commands (--wallet):",
 		Method: wallettypes.Method(""),
@@ -70,8 +70,8 @@ func listCommands() {
 		methods := dcrjson.RegisteredMethods(method)
 		for _, methodStr := range methods {
 			switch method.(type) {
-			case dcrdtypes.Method:
-				method = dcrdtypes.Method(methodStr)
+			case mondtypes.Method:
+				method = mondtypes.Method(methodStr)
 			case wallettypes.Method:
 				method = wallettypes.Method(methodStr)
 			}

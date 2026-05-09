@@ -1,7 +1,7 @@
 monetarium-ctl
 ==============
 
-[![Build Status](https://github.com/monetarium/dcrctl/workflows/Build%20and%20Test/badge.svg)](https://github.com/monetarium/dcrctl/actions)
+[![Build Status](https://github.com/monetarium/monetarium-ctl/workflows/Build%20and%20Test/badge.svg)](https://github.com/monetarium/monetarium-ctl/actions)
 [![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 
 Monetarium-ctl is a command-line client for interacting with the JSON-RPC servers of

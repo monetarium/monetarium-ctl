@@ -17,7 +17,7 @@ import (
 	"strings"
 
 	"github.com/monetarium/monetarium-node/dcrjson"
-	dcrdtypes "github.com/monetarium/monetarium-node/rpc/jsonrpc/types"
+	mondtypes "github.com/monetarium/monetarium-node/rpc/jsonrpc/types"
 	wallettypes "github.com/monetarium/monetarium-wallet/rpc/jsonrpc/types"
 )
 
@@ -68,7 +68,7 @@ func main() {
 	// Ensure the specified method identifies a valid registered command and
 	// is one of the usable types.
 	methodStr := args[0]
-	var method interface{} = dcrdtypes.Method(methodStr)
+	var method interface{} = mondtypes.Method(methodStr)
 	usageFlags, err := dcrjson.MethodUsageFlags(method)
 	if err != nil {
 		method = wallettypes.Method(methodStr)
