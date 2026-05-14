@@ -8,7 +8,7 @@ require (
 	github.com/monetarium/monetarium-node/dcrjson v1.3.6
 	github.com/monetarium/monetarium-node/dcrutil v1.3.6
 	github.com/monetarium/monetarium-node/rpc/jsonrpc/types v1.3.6
-	github.com/monetarium/monetarium-wallet v1.3.3
+	github.com/monetarium/monetarium-wallet v1.3.7
 )
 
 require (

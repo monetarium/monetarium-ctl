@@ -67,12 +67,30 @@ func main() {
 
 	// Ensure the specified method identifies a valid registered command and
 	// is one of the usable types.
+	//
+	// Several methods are registered in BOTH the node and wallet type
+	// registries (e.g. createrawtransaction). The wallet's type often
+	// extends the node's with additional fields (cointype, inputamounts)
+	// or different value shapes (decimal-coin strings vs float64). When
+	// --wallet is set, prefer the wallet type so those extensions are
+	// reachable from the command line; otherwise prefer the node type.
 	methodStr := args[0]
-	var method interface{} = mondtypes.Method(methodStr)
-	usageFlags, err := dcrjson.MethodUsageFlags(method)
-	if err != nil {
+	var method interface{}
+	var usageFlags dcrjson.UsageFlag
+	if cfg.Wallet {
 		method = wallettypes.Method(methodStr)
 		usageFlags, err = dcrjson.MethodUsageFlags(method)
+		if err != nil {
+			method = mondtypes.Method(methodStr)
+			usageFlags, err = dcrjson.MethodUsageFlags(method)
+		}
+	} else {
+		method = mondtypes.Method(methodStr)
+		usageFlags, err = dcrjson.MethodUsageFlags(method)
+		if err != nil {
+			method = wallettypes.Method(methodStr)
+			usageFlags, err = dcrjson.MethodUsageFlags(method)
+		}
 	}
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Unrecognized command %q\n", methodStr)

@@ -16,8 +16,8 @@ github.com/jessevdk/go-flags v1.6.1 h1:Cvu5U8UGrLay1rZfv/zP7iLpSHGUZ/Ou68T0iX1bB
 github.com/jessevdk/go-flags v1.6.1/go.mod h1:Mk8T1hIAWpOiJiHa9rJASDK2UGWji0EuPGBnNLMooyc=
 github.com/klauspost/cpuid/v2 v2.2.8 h1:+StwCXwm9PdpiEkPyzBXIy+M9KUb4ODm0Zarf1kS5BM=
 github.com/klauspost/cpuid/v2 v2.2.8/go.mod h1:Lcz8mBdAVJIBVzewtcLocK12l3Y+JytZYpaMropDUws=
-github.com/monetarium/monetarium-node/chaincfg v1.3.5 h1:YebYgMFpN2UjVFNNzpNhbTOQLjvQOX2LZUXKRjJl7X8=
-github.com/monetarium/monetarium-node/chaincfg v1.3.5/go.mod h1:y8YR+adGnuVvaUw1H/sgja7q9vEPHkYFCi06ORWONBQ=
+github.com/monetarium/monetarium-node/chaincfg v1.3.6 h1:Y8iQQRrzxEoFAilKa2lmsC8p6DhHuw/R7O1pR3ojckw=
+github.com/monetarium/monetarium-node/chaincfg v1.3.6/go.mod h1:/qTII0UFTN4dsSZua10We2BUl1Il/zx8sLbeDvNGcFA=
 github.com/monetarium/monetarium-node/chaincfg/chainhash v1.3.6 h1:oiODE75do59JHT81BMQxMM1Ep8lFRadGCVt11FtToc4=
 github.com/monetarium/monetarium-node/chaincfg/chainhash v1.3.6/go.mod h1:gmo2GhTOc5gNM0p9y2wG2kyocjNjR8KOKMzBmpVKPjg=
 github.com/monetarium/monetarium-node/cointype v1.3.6 h1:Nuo7Bh8L3aoTbpa3QLfR1oiYFx7ghf/xrRNEwtAJyqA=
@@ -44,8 +44,8 @@ github.com/monetarium/monetarium-node/txscript v1.3.6 h1:tJQSmeD+4Amy0tqgzzuwIw2
 github.com/monetarium/monetarium-node/txscript v1.3.6/go.mod h1:6aCmnGIa/N6kf0ToYVApgar/mjCHL3IIc4/hAUH0YZA=
 github.com/monetarium/monetarium-node/wire v1.3.6 h1:SIfUBtJqaMnfPQx0FkIx5aW6xJBzrg/JnAaCGMtIKC0=
 github.com/monetarium/monetarium-node/wire v1.3.6/go.mod h1:A9+kp+zW73b88RIVBjSHR9t0O1IOGComCkp2y1/UKiA=
-github.com/monetarium/monetarium-wallet v1.3.3 h1:t4Woo0R/pTegI0F/qldeqgvPgLKR636mXTdgnas/c5c=
-github.com/monetarium/monetarium-wallet v1.3.3/go.mod h1:spUYttz/eVfrT+HYYCO8WIKRUt6p1HFPtmb+i0cob7w=
+github.com/monetarium/monetarium-wallet v1.3.7 h1:tuF1X1pHrQNBvLoZmuffVk20G9n1dMsdHmH+UvOhc5s=
+github.com/monetarium/monetarium-wallet v1.3.7/go.mod h1:ECKv+K/hborwWAQwVS1EONxA4iwoRfHM6p4LxrRnR04=
 golang.org/x/crypto v0.33.0 h1:IOBPskki6Lysi0lo9qQvbxiQ+FvsCC/YWOecCHAixus=
 golang.org/x/crypto v0.33.0/go.mod h1:bVdXmD7IV/4GdElGPozy6U7lWdRXA4qyRVGJV57uQ5M=
 golang.org/x/sys v0.5.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
