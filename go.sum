@@ -44,8 +44,8 @@ github.com/monetarium/monetarium-node/txscript v1.3.6 h1:tJQSmeD+4Amy0tqgzzuwIw2
 github.com/monetarium/monetarium-node/txscript v1.3.6/go.mod h1:6aCmnGIa/N6kf0ToYVApgar/mjCHL3IIc4/hAUH0YZA=
 github.com/monetarium/monetarium-node/wire v1.3.6 h1:SIfUBtJqaMnfPQx0FkIx5aW6xJBzrg/JnAaCGMtIKC0=
 github.com/monetarium/monetarium-node/wire v1.3.6/go.mod h1:A9+kp+zW73b88RIVBjSHR9t0O1IOGComCkp2y1/UKiA=
-github.com/monetarium/monetarium-wallet v1.3.7 h1:tuF1X1pHrQNBvLoZmuffVk20G9n1dMsdHmH+UvOhc5s=
-github.com/monetarium/monetarium-wallet v1.3.7/go.mod h1:ECKv+K/hborwWAQwVS1EONxA4iwoRfHM6p4LxrRnR04=
+github.com/monetarium/monetarium-wallet v1.3.9 h1:q0tFxK3XVf0xXS7Qltbchw0gh3H7UldXF8hG9GqKNMs=
+github.com/monetarium/monetarium-wallet v1.3.9/go.mod h1:ECKv+K/hborwWAQwVS1EONxA4iwoRfHM6p4LxrRnR04=
 golang.org/x/crypto v0.33.0 h1:IOBPskki6Lysi0lo9qQvbxiQ+FvsCC/YWOecCHAixus=
 golang.org/x/crypto v0.33.0/go.mod h1:bVdXmD7IV/4GdElGPozy6U7lWdRXA4qyRVGJV57uQ5M=
 golang.org/x/sys v0.5.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
