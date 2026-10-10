@@ -53,7 +53,7 @@ var (
 	// the app will panic at runtime.  Of particular note is the pre-release
 	// and build metadata portions MUST only contain characters from
 	// semanticAlphabet.
-	Version = "1.3.11"
+	Version = "1.3.13"
 
 	// NOTE: The following values are set via init by parsing the above Version
 	// string.
